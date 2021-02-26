@@ -1,13 +1,13 @@
 # streamlit-covid-data
  Streamlit app to visualize COVID data.
 
-Requiements
- 
+## Requiements
+``` 
  pip install streamlit
- 
- Usage
- 
+``` 
+## Usage
+``` 
  streamlit run main.py
- 
- Source of data
+``` 
+## Source of data
  https://ourworldindata.org/coronavirus
