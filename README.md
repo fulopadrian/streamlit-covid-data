@@ -5,6 +5,7 @@
 ## Requiements
 ``` 
  pip install streamlit
+ pip install wget
 ``` 
 ## Usage
 ``` 

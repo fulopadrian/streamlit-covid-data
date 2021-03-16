@@ -1,7 +1,16 @@
+"""
+The Our World In Data COVID-19 dataset visualisation app.
+
+Date: 2021-03-16
+"""
+
 import streamlit as st
 import pandas as pd
 
 def loadData():
+    """
+    Loads the data from the csv and drops the unused columns
+    """
     df = pd.read_csv("owid-covid-data.csv", sep=",", parse_dates=["date"], na_values=[""])
     df.set_index("date", inplace=True)
 
@@ -10,7 +19,9 @@ def loadData():
     return df
 
 def linePlot(df, options_countries, options_data):
-
+    """
+    Creates a default streamlit line charts
+    """
     data_by_country = df[df["location"] == options_countries]
     data = data_by_country[options_data]
 
